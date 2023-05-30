@@ -14,6 +14,17 @@ function getActiveTab(elements, all = false) {
     }
 }
 
+// Get tab ID
+function getTabId() {
+    const activeTab = getActiveTab();
+    const tabIdLookup = {
+      Sketch: elementIDs.sketch,
+      "Inpaint sketch": elementIDs.inpaintSketch,
+      Inpaint: elementIDs.inpaint,
+    };
+    return tabIdLookup[activeTab.innerText];
+  }
+
 onUiLoaded(async() => {
     const hotkeysConfig = {
         resetZoom: "KeyR",
