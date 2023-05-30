@@ -127,19 +127,11 @@ onUiLoaded(async() => {
            const isAuxButton = e.button >= 3;
            const activeTab = getTabId(elements,elementIDs);
    
-           // Set opacity to 1, to avoid bugs
-           if (canvasOpacity < 1 && "Inpaint" === getActiveTab().innerText) {
-             setCanvasOpacity(1, elemId);
-             setBrushOpacity(1);
-             canvasOpacity = 1;
-             brushOpacity = 1;
-           }
    
            if (((isUndoKey && isCtrlPressed) || isAuxButton) && activeTab) {
              e.preventDefault();
              const undoBtn = document.querySelector(`${elemId} button[aria-label="Undo"]`);
              if (undoBtn && activeTab === elemId) {
-               restoreUndo();
                undoBtn.click();
              }
            }
