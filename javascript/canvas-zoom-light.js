@@ -15,8 +15,8 @@ function getActiveTab(elements, all = false) {
 }
 
 // Get tab ID
-function getTabId() {
-    const activeTab = getActiveTab();
+function getTabId(elements,elementIDs) {
+    const activeTab = getActiveTab(elements);
     const tabIdLookup = {
       Sketch: elementIDs.sketch,
       "Inpaint sketch": elementIDs.inpaintSketch,
@@ -125,7 +125,7 @@ onUiLoaded(async() => {
            const isUndoKey = e.code === hotkeysConfig.undo;
            const isCtrlPressed = e.ctrlKey || e.metaKey;
            const isAuxButton = e.button >= 3;
-           const activeTab = getTabId();
+           const activeTab = getTabId(elements,elementIDs);
    
            // Set opacity to 1, to avoid bugs
            if (canvasOpacity < 1 && "Inpaint" === getActiveTab().innerText) {
