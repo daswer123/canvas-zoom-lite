@@ -1,5 +1,5 @@
-# Canvas zoom light
-### A light version of [canvas-zoom](https://github.com/richrobber2/canvas-zoom) containing only the necessary functions. This version does not contain the modified gradio.
+# Canvas zoom lite
+### A lite version of [canvas-zoom](https://github.com/richrobber2/canvas-zoom) containing only the necessary functions. This version does not contain the modified gradio.
 
 ## Key Features:
 1) You can zoom with **Shift+wheel** hotkey in the image area, the zoom goes where the mouse pointer points
