@@ -23,5 +23,28 @@
 
 **O** - Overlap all elements and back
 
+## Demonstration:
 
+1) Zoom canvas, zoom to where the mouse is pointing ( **Shift + wheel** )
 
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/assets/22278673/f3b6191a-dc60-4cc7-84c1-92ac5725c611
+
+2) Reset Zoom ( **R** )
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/assets/22278673/b221ccc6-a1b9-495c-9235-ec28a6a06db7
+
+3) Move canvas ( **F** )
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/assets/22278673/fd2ead9c-490f-4a4a-aa97-67ce1fe66f4a
+
+4) Fullscreen mode ( **S** )
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/assets/22278673/7f445f87-ae70-4f5c-8f4d-1668cd822617
+
+5) Adjust brush size ( **Ctr+wheel** )
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/assets/22278673/0e3d2a8f-7844-42d4-b608-670db7578348
+
+6) An example of how the script works (sorry, I made it quickly, but the point should be clear)
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui/assets/22278673/6636b956-644a-4324-8906-9a7f9a70c6b1
