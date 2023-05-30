@@ -31,7 +31,6 @@ onUiLoaded(async() => {
         fitToScreen: "KeyS",
         moveKey: "KeyF",
         overlap: "KeyO",
-        undo: "KeyZ"
     };
 
     let isMoving = false;
@@ -119,23 +118,6 @@ onUiLoaded(async() => {
                 targetElement.style.zIndex = zIndex2;
             }
         }
-
-        // Undo last action
-         function undoLastAction(e) {
-           const isUndoKey = e.code === hotkeysConfig.undo;
-           const isCtrlPressed = e.ctrlKey || e.metaKey;
-           const isAuxButton = e.button >= 3;
-           const activeTab = getTabId(elements,elementIDs);
-   
-   
-           if (((isUndoKey && isCtrlPressed) || isAuxButton) && activeTab) {
-             e.preventDefault();
-             const undoBtn = document.querySelector(`${elemId} button[aria-label="Undo"]`);
-             if (undoBtn && activeTab === elemId) {
-               undoBtn.click();
-             }
-           }
-         }
 
         // Adjust the brush size based on the deltaY value from a mouse wheel event
         function adjustBrushSize(
@@ -344,7 +326,6 @@ onUiLoaded(async() => {
                 [hotkeysConfig.resetZoom]: resetZoom,
                 [hotkeysConfig.overlap]: toggleOverlap,
                 [hotkeysConfig.fitToScreen]: fitToScreen,
-                [hotkeysConfig.undo]: undoLastAction(event)
             };
 
             const action = hotkeyActions[event.code];
