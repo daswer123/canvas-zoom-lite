@@ -1,6 +1,6 @@
-# Canvas zoom lite
+# AUTOMATIC1111 added this extension to webui version 1.4.0 
 
-## AUTOMATIC1111 added this extension to the dev branch, in the new version of webui this extension will be enabled by default
+# Canvas zoom lite
 
 ### A lite version of [canvas-zoom](https://github.com/richrobber2/canvas-zoom) containing only the necessary functions. This version does not contain the modified gradio.
 
