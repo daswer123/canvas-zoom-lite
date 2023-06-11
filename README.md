@@ -1,4 +1,4 @@
-# AUTOMATIC1111 added this extension to webui version 1.4.0 
+# AUTOMATIC1111 added this extension to webui version 1.4.0. From version 1.4.0 this extension will now be the buildin solution
 
 # Canvas zoom lite
 
